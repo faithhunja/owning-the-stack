@@ -1,0 +1,6 @@
+apache-airflow==3.3.1
+duckdb>=2.0.0
+apache-airflow-providers-duckdb
+apache-airflow-providers-amazon[s3fs]
+apache-airflow-providers-standard
+requests
