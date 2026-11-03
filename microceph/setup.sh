@@ -20,3 +20,16 @@ sudo microceph enable rgw --port 8080
 
 # Create an S3 user then copy generated keys
 sudo microceph.radosgw-admin user create --uid=demo-user --display-name="demo-user"
+
+#### For when you start a new session:
+# Check status of snap services
+sudo snap services microceph
+
+# Start the daemon
+sudo snap start microceph.daemon
+
+# Start the RGW (S3 gateway)
+sudo snap start microceph.rgw
+
+# Verify MicroCeph is back online
+sudo microceph status
