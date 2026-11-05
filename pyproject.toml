@@ -1,11 +1,16 @@
 [project]
 name = "owning-the-stack"
 version = "0.1.0"
-description = "Add your description here"
+description = "Code for the talk titled "Owning the Stack: Building Data Pipelines with Ceph, Airflow and DuckDB", presented at OpenInfra Days Kenya 2026"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "boto3>=1.43.123",
     "dotenv>=0.9.9",
     "duckdb>=2.0.0",
+    "jupyterlab>=4.6.5",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "requests>=2.34.2",
 ]
