@@ -1,14 +1,14 @@
-# Start here snap isn't installed
+# Start here if snap isn't installed
 sudo apt update
 sudo apt install snapd
 
 # Install MicroCeph
 sudo snap install microceph
 
-# Stop autoupdates
+# Stop autoupdates (in case something breaks mid-demo)
 sudo snap refresh --hold microceph
 
-# Create a single-node Ceph cluster with three OSDs
+# Create a single-node MicroCeph cluster with three OSDs
 sudo microceph cluster bootstrap
 sudo microceph disk add loop,4G,3
 
@@ -33,3 +33,6 @@ sudo snap start microceph.rgw
 
 # Verify MicroCeph is back online
 sudo microceph status
+
+# List the files in the bucket (owning-the-stack)
+sudo microceph.radosgw-admin bucket list --bucket=owning-the-stack
