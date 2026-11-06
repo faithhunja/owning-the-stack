@@ -17,8 +17,6 @@ BRONZE_KEY   = "bronze/yellow_tripdata_%s.parquet"
 SILVER_KEY   = "silver/yellow_tripdata_%s.parquet"
 GOLD_KEY     = "gold/monthly_summary_%s.parquet"
 
-# TAXI_URL = "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.parquet"
-
 # Helper functions
 
 def sql_str(value: str) -> str:
