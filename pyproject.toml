@@ -1,7 +1,7 @@
 [project]
 name = "owning-the-stack"
 version = "0.1.0"
-description = "Code for the talk titled "Owning the Stack: Building Data Pipelines with Ceph, Airflow and DuckDB", presented at OpenInfra Days Kenya 2026"
+description = ""
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
