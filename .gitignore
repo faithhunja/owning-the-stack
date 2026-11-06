@@ -1,0 +1,5 @@
+.env
+airflow/.env
+scripts/.env
+scripts/.ipynb_checkpoints
+__pycache__/
